@@ -6,19 +6,19 @@ import math
 # Read in the dataset
 dataset = pd.read_csv(r'Melbourne_housing_FULL.csv', skip_blank_lines=True)
 
-nnPrice = []
+nnDistance = []
 
-for p in dataset.Price:
-    if math.isnan(p):
-        pass
-    else:
+for p in dataset.Distance:
+#    if math.isnan(p):
+#        pass
+#    else:
     #    plt.hist(p, color = 'blue', edgecolor = 'black')
-        nnPrice.append(int(p))
+    nnDistance.append(float(p))
 
 # print(nnPrice[1:40])
-plt.hist(nnPrice, color = 'blue', edgecolor='black', bins=1000)
-plt.xlim(left=0, right=4000000)
+plt.hist(nnDistance, color = 'blue', edgecolor='black', bins='auto')
+# plt.xlim(left=0, right=6)
 plt.ylabel("Number of houses")
-plt.xlabel("Price")
-plt.title("House prices")
+plt.xlabel("Distance (km)")
+plt.title("Distance from city center")
 plt.show()

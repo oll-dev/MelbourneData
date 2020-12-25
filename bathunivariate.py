@@ -6,19 +6,19 @@ import math
 # Read in the dataset
 dataset = pd.read_csv(r'Melbourne_housing_FULL.csv', skip_blank_lines=True)
 
-nnPrice = []
+nnBath = []
 
-for p in dataset.Price:
+for p in dataset.Bathroom:
     if math.isnan(p):
         pass
     else:
     #    plt.hist(p, color = 'blue', edgecolor = 'black')
-        nnPrice.append(int(p))
+        nnBath.append(int(p))
 
 # print(nnPrice[1:40])
-plt.hist(nnPrice, color = 'blue', edgecolor='black', bins=1000)
-plt.xlim(left=0, right=4000000)
+plt.hist(nnBath, color = 'blue', edgecolor='black', bins='auto')
+plt.xlim(left=0, right=6)
 plt.ylabel("Number of houses")
-plt.xlabel("Price")
-plt.title("House prices")
+plt.xlabel("Number of bathrooms")
+plt.title("Bathrooms")
 plt.show()
