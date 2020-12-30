@@ -1,0 +1,34 @@
+Probability for Vikinglotto
+
+Vikinglotto is a lottery, that is played in some european countries.
+In the lottery, one chooses 6 main numbers from 1-48 and 1 extra number from 1-8.
+There are 8 levels of winning, probabilities of winning go as such:
+
+
+1. Jackpot (all 6 correctly guessed numbers and 1 correctly guessed extra number)
+1 / 98172096
+
+2. Level II (all 6 correctly guessed, extra incorrect)
+1 / 14024585.142857144
+
+3. Level III (5 correct guesses, 1 incorrect, extra guessed correctly)
+1 / 11045393.160991058
+
+4. Level IV (5 correct guesses, 1 incorrect, extra incorrect)
+1 / 1577913.3087130082
+
+5. Level V (4 correct guesses, 2 incorrect, extra guessed correctly)
+1 / 587520.9128186728
+
+6. Level VI (4 correct guesses, 2 incorrect, extra incorrect)
+1 / 83931.55897409613
+
+7. Level VII (3 correct guesses, 3 incorrect, extra correct)
+1 / 16667.25993811835
+
+8. Level VIII (3 correct guesses, 3 incorrect, extra incorrect)
+1 / 2381.037134016907
+
+---------
+
+Explanation of computation available in .py script
